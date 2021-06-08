@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ASME</title>
+<style>
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 20px 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
+/*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
+</style>
+</head>
+<body>
+
+<div class="cards-list">
+
+  <div class="card 1">
+    <div class="card_image"> <img src="https://www.jimphicdesigns.com/downloads/imgs-mockup/statistics-blocks-up-down-animation.gif" /> </div>
+    <div class="card_title title-white">
+      <a href="https://asme-employee-diversity.herokuapp.com/">ASME Employee Diversity</a>
+    </div>
+  </div>
+
+  <div class="card 2">
+    <div class="card_image">
+      <img src="https://i.pinimg.com/originals/f8/8a/ca/f88acab7ffd127b4465659500aa0538f.gif" />
+    </div>
+    <div class="card_title title-white">
+      <a href="https://asme-resources-highchart.herokuapp.com/">ASME Engineering Resources</a>
+    </div>
+  </div>
+
+  <div class="card 3">
+    <div class="card_image">
+      <img src="https://jonmgomes.com/wp-content/uploads/2020/06/Pie-Chart-GIF.gif" />
+    </div>
+    <div class="card_title">
+      <a href="https://asme-events.herokuapp.com/">ASME Events</a>
+    </div>
+  </div>
+
+  <div class="card 4">
+    <div class="card_image">
+      <img src="https://cdn.dribbble.com/users/3593/screenshots/2475280/linechart.gif" />
+    </div>
+    <div class="card_title title-black">
+      <a href="https://asme-journals.herokuapp.com/">ASME Journals</a>
+    </div>
+  </div>
+
+  <div class="card 4">
+    <div class="card_image">
+      <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/69aa52fb-b692-463f-84c1-cde2470445ae/css-animation-craziness.gif" />
+    </div>
+    <div class="card_title title-black">
+      <a href="https://asme-operating-expense.herokuapp.com//">ASME OPERATING EXPENSE</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
